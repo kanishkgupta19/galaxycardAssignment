@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>GalaxyCard Assignment</title>
+  </head>
+  <body style="background-color:whitesmoke;">
+    <!-- As a heading -->
+    <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+        <span onclick="window.location.href='/'" class="navbar-brand mb-0 h1">GalaxyCard Assignment</span>
+    </div>
+    </nav>
+    <br><br>
+    <div class="container">
+    <center>
+        <h1> Galaxy Card Application</h1>
+    </center>
+
+    <br><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header" style="background-color: grey;"><h3>User</h3></div>
+                <div class="card-content p-5">
+                    <center>
+                        <form method="POST" action="/login">
+                            <div class="mb-3 row">
+                                <label for="username" class="col-sm-3 col-form-label">UserName</label>
+                                <div class="col-sm-9">
+                                <input type="text" name="username" class="form-control" id="username" required placeholder="Enter username">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="username" class="col-sm-3 col-form-label">Email ID</label>
+                                <div class="col-sm-9">
+                                <input type="email" name="email" class="form-control" id="email" required placeholder="Enter Email Id">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-success">Login</button>
+                        </form>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header" style="background-color: grey;"><h3>Admin</h3></div>
+                <div class="card-content p-5">
+                    <p>Admin can view all existing users and can Delete, edit users</p>
+                    <center><button onclick="window.location.href='/admin'" class="btn btn-primary">Login as Admin</button></center>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>  
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <br><br><br>
+    <center>
+        <h4>Created By:-<br><b>Kanishk Gupta</b><br>Kanishkgupta19@gmail.com</h4>
+    </center>
+  </body>
+</html>
